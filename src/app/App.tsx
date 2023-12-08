@@ -6,9 +6,8 @@
  */
 
 import React from "react";
-import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, } from "react-native";
+import { SafeAreaView, ScrollView, StatusBar, Text, useColorScheme } from "react-native";
 import { AppStyles as styles } from "./App.styles";
-
 
 export const App = () => {
     const isDarkMode = useColorScheme() === "dark";
@@ -22,4 +21,3 @@ export const App = () => {
         </SafeAreaView>
     );
 };
-
