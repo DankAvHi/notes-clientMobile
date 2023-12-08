@@ -67,4 +67,4 @@ yarn-error.log
 
 
 # vscode
-.vscode/debuggerWorker.js
+/.vscode/.react/debuggerWorker.js
