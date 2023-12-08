@@ -1,0 +1,77 @@
+@import url("./themes/index.css");
+@import url("./fonts/index.css");
+
+* {
+    list-style: none;
+    margin: 0;
+
+    border: none;
+
+    padding: 0;
+
+    background: transparent;
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    font-family: Roboto;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--md-sys-color-on-background-dark);
+
+    transition: backdrop-filter 0.2s;
+}
+
+*:focus-visible {
+    outline: none;
+
+    backdrop-filter: brightness(0.9);
+}
+
+a,
+button,
+input[type="submit"] {
+    cursor: pointer;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+a,
+p,
+span,
+path {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+html,
+body,
+#root {
+    min-height: 100svh;
+    width: 100%;
+
+    background-color: var(--md-sys-color-background-dark);
+}
+
+*:not(script, head) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}

@@ -10,5 +10,6 @@ module.exports = {
         "space-infix-ops": "off",
         semi: "off",
         "keyword-spacing": "off",
+        "react/react-in-jsx-scope": "off",
     },
 };
