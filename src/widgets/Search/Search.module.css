@@ -1,0 +1,21 @@
+.Search {
+    border-radius: 28px;
+
+    padding: 4px;
+
+    background-color: var(--md-sys-color-surface-container-high-dark);
+
+    width: 100%;
+
+    gap: 4px;
+    align-items: center;
+}
+
+.input {
+    border-radius: 8px;
+
+    padding: 12px 4px;
+
+    width: 100%;
+    height: 100%;
+}
