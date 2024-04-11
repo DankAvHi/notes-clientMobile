@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-nocheck
-import iconStyles from "@/shared/styles/global/icons.module.css";
+import { IconStyles } from "../../styles/global/icons.styles";
 import CreateIconRaw from "./create.svg?component";
 import MenuIconRaw from "./menu.svg?component";
 import SearchIconRaw from "./search.svg?component";
@@ -15,31 +15,31 @@ const VB = "0 0 24 24";
 
 const CreateIcon: Icon = (props) => {
     const { className, ...iconProps } = props;
-    return <CreateIconRaw viewBox={VB} className={`${iconStyles.default} ${className}`} {...iconProps} />;
+    return <CreateIconRaw viewBox={VB} className={`${IconStyles.default} ${className}`} {...iconProps} />;
 };
 const MenuIcon: Icon = (props) => {
     const { className, ...iconProps } = props;
-    return <MenuIconRaw viewBox={VB} className={`${iconStyles.default} ${className}`} {...iconProps} />;
+    return <MenuIconRaw viewBox={VB} className={`${IconStyles.default} ${className}`} {...iconProps} />;
 };
 const SearchIcon: Icon = (props) => {
     const { className, ...iconProps } = props;
-    return <SearchIconRaw viewBox={VB} className={`${iconStyles.defaultTall} ${className}`} {...iconProps} />;
+    return <SearchIconRaw viewBox={VB} className={`${IconStyles.defaultTall} ${className}`} {...iconProps} />;
 };
 const ArrowBack: Icon = (props) => {
     const { className, ...iconProps } = props;
-    return <ArrowBackRaw viewBox={VB} className={`${iconStyles.default} ${className}`} {...iconProps} />;
+    return <ArrowBackRaw viewBox={VB} className={`${IconStyles.default} ${className}`} {...iconProps} />;
 };
 const Attachment: Icon = (props) => {
     const { className, ...iconProps } = props;
-    return <AttachmentRaw viewBox={VB} className={`${iconStyles.default} ${className}`} {...iconProps} />;
+    return <AttachmentRaw viewBox={VB} className={`${IconStyles.default} ${className}`} {...iconProps} />;
 };
 const DeleteForever: Icon = (props) => {
     const { className, ...iconProps } = props;
-    return <DeleteForeverRaw viewBox={VB} className={`${iconStyles.default} ${className}`} {...iconProps} />;
+    return <DeleteForeverRaw viewBox={VB} className={`${IconStyles.default} ${className}`} {...iconProps} />;
 };
 const PushPin: Icon = (props) => {
     const { className, ...iconProps } = props;
-    return <PushPinRaw viewBox={VB} className={`${iconStyles.default} ${className}`} {...iconProps} />;
+    return <PushPinRaw viewBox={VB} className={`${IconStyles.default} ${className}`} {...iconProps} />;
 };
 
 export { CreateIcon, MenuIcon, SearchIcon, ArrowBack, Attachment, DeleteForever, PushPin };

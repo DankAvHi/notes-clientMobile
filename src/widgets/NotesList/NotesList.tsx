@@ -1,15 +1,14 @@
-"use client";
-
-import styles from "./NotesList.module.css";
+import { NotesListStyles as styles } from "./NotesList.styles";
 import { List } from "./List";
-import { useNotesContext } from "@/app/providers";
+import { useNotesContext } from "../../app/providers";
+import { View } from "react-native";
 
 export const NotesList = () => {
     const { getNotes } = useNotesContext();
     const notes = getNotes();
     return (
-        <div className={styles.NotesList}>
+        <View style={styles.NotesList}>
             <List notes={notes || []} />
-        </div>
+        </View>
     );
 };
